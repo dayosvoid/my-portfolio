@@ -1,0 +1,13 @@
+@import "tailwindcss";
+/* *{
+ border:1px solid red; 
+} */
+body{
+ font-family: manrope; 
+  background: #000;
+  color: white;
+}
+
+.BebasNeue{
+ font-family: Bebas Neue; 
+}
