@@ -19,11 +19,11 @@ const About = () => {
                 I am a Fullstack developer based in nigeria. Has a Political science and Education background  . 
             </h1>
             {/* moblie */}
-            <p className=' text-sm md:hidden'>
+            <p className=' text-[16px] md:hidden'>
                 I am a Fullstack developer based in Nigeria looking for exciting opportunities. Has a Political science and Education background . Likes to focus on accessibility and data structure when developing .    
             </p>
             {/* desktop */}
-            <p className=' text-sm md:text-lg font-light md:flex hidden'>
+            <p className=' md:text-lg font-light md:flex hidden'>
                 I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility and data structure when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Nodejs and a bit of Designing. While I am not programming, I enjoy playing football, chess and making art. Learning more to improve skill.
             </p>
 
