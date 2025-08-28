@@ -28,7 +28,7 @@ const MoreAboutMe = () => {
     ]
     const EXP2 = [ {code:'TAILWIND CSS'},{code:'HTML'},{code:'GITHUB'},{code:'REACT'}]
   return (
-    <div className='container w-11/12 mx-auto py-10'>
+    <div className='container w-11/12 mx-auto py-5'>
         <div className='space-y-10'>
             <div ref={about2Ref}  className=' flex flex-col gap-10 md:gap-0 md:flex-row py-5 md:py-15 md:items-center md:items-start ' > 
                     <div className='w-full  '>
