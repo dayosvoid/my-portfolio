@@ -1,5 +1,4 @@
 import React, { useState, useContext } from 'react'
-import menunav from "../assets/nav/menu.svg"
 import { X } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { ScrollContext } from '../context/Scroll';

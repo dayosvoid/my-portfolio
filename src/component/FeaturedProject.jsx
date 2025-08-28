@@ -2,7 +2,6 @@ import React, { useContext,useEffect,useRef } from 'react'
 import betahouse from '../assets/featured/betahouse.png'
 import url from '../assets/featured/url.png'
 import { ArrowUpRight, Github } from 'lucide-react'
-import github from '../assets/hero/github.png'
 import {  ScrollContext } from '../context/Scroll'
 import { FaGithub } from 'react-icons/fa'
 
