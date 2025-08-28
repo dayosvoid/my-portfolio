@@ -16,19 +16,19 @@ const About = () => {
         <div className='flex flex-col  gap-5 md:w-[50%]'>
 
             <h1 className='hidden md:flex text-2xl '>
-                I am a front-end developer based in Sydney. Has Mechanical Engineering background. 
+                I am a Fullstack developer based in nigeria. Has a Political science and Education background  . 
             </h1>
             {/* moblie */}
             <p className=' text-sm md:hidden'>
-                I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing.    
+                I am a Fullstack developer based in Nigeria looking for exciting opportunities. Has a Political science and Education background . Likes to focus on accessibility and data structure when developing .    
             </p>
             {/* desktop */}
             <p className=' text-sm md:text-lg font-light md:flex hidden'>
-                I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill.
+                I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility and data structure when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Nodejs and a bit of Designing. While I am not programming, I enjoy playing football, chess and making art. Learning more to improve skill.
             </p>
 
-            <span className='text-[hsla(72,72%,70%,1)] font-bold  text-[16px] md:text-lg '>
-                <Link to='/about'><p className=' text-nowrap border-b-[2px] border-[hsla(72,72%,70%,1)] w-[130px] md:w-[150px]'>MORE ABOUT ME</p></Link> 
+            <span className='text-[hsla(72,72%,70%,1)] font-bold hover:text-[18px] text-[18px] md:text-lg '>
+                <Link to='/about'><p className=' text-nowrap border-b-[2px] border-[hsla(72,72%,70%,1)] hover:text-[20px] transition-all duration-500 ease-out delay-200 w-[130px] md:w-[150px]'>MORE ABOUT ME</p></Link> 
             </span>
             
         </div>

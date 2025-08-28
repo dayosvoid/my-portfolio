@@ -24,7 +24,7 @@ const Exp = () => {
             <div className='flex flex-col gap-5 md:w-full'>
                 <span className='flex flex-col md:flex-row md:justify-between w-full'>
                     <span className='w-full flex flex-col gap-1'>
-                        <p className='font-semibold md:text-xl'>FullStack Intern</p>
+                        <p className='font-semibold text-[16px] md:text-xl'>FullStack Intern</p>
                         <span className='text-[12px] hidden font-bold md:flex text-[hsla(72,72%,70%,1)]'><a href="https://techstudioacademy.com">Tech Studio Academy</a></span>
                     </span>
                     <p className='text-[16px] md:text-end text-[hsla(0,0%,78%,1)] w-full'>August 2025 — Present </p>

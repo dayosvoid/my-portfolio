@@ -18,7 +18,7 @@ const FeaturedProject = () => {
         {
             image:betahouse,
             title:'Promotional landing page for our favorite show',
-            description:'Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.',
+            description:'Teamed up with a designer to breathe life into a property display webpage for our beloved show, Adventure Time. Delivered a fully responsive design and functional website with dynamic content capabilities, seamlessly integrating advanced feature to keep users engaged.',
             year:'2023',
             role:'fullstack-dev',
             liveLink:'https://frontend-beta-house-vb16.vercel.app/',
@@ -34,7 +34,7 @@ const FeaturedProject = () => {
         },{
             image:betahouse,
             title:'Promotional landing page for our favorite show',
-            description:'Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.',
+            description:'Teamed up with a designer to breathe life into a property display webpage for our beloved show, Adventure Time. Delivered a fully responsive design and functional website with dynamic content capabilities, seamlessly integrating advanced feature to keep users engaged.',
             year:'2024',
             role:'fullstack-dev',
             liveLink:'https://frontend-beta-house-vb16.vercel.app/',
@@ -49,14 +49,14 @@ const FeaturedProject = () => {
             <div  ref={workRef}>
                 <span ref={targetRef} className='space-y-4 '>
                     <h2 className='BebasNeue text-4xl md:text-6xl'>Featured Projects</h2>
-                    <p className='manrope text-[16px] md:text-lg font-light md:w-[50%]'>Here are some of the selected projects that showcase my passion for front-end development.</p>
+                    <p className='manrope text-[16px] md:text-lg font-light md:w-[50%]'>Here are some of the selected projects that showcase my passion for Fullstack development projects.</p>
                 </span>
                 {/* FIRST PROJECT */}
                {
                 projects.map((project)=>(
                     <div key={project.year} className='py-10 w-full gap-10 md:flex '>
                         {/* projext */}
-                        <div  className='w-full bg-gray-800 p-5 pb-0 flex justify-center rounded-md overflow-hidden '>
+                        <div  className='w-full bg-gray-800 p-5 pb-0 pt-7 flex justify-center rounded-md overflow-hidden '>
                             <a href={project.liveLink}>
                                 <img src={project.image} alt="" className='size-[80%] relative bottom-[-30px] left-1/2 -translate-x-1/2' />
                             </a>

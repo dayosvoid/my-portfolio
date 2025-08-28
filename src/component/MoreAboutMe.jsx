@@ -42,27 +42,27 @@ const MoreAboutMe = () => {
                         </span>
                         {/* priorty of what i do */}
                         <p className='text-xl md:text-2xl md:font-semibold md:min-w-full'>
-                                I am a front-end developer based in Nigeria looking for exciting opportunities. Has Mechanical Engineering background.
+                                I am a Fullstack developer based in Nigeria looking for exciting opportunities. Has a Political science and Education background.
                         </p>
                         {/* what i do */}
                         <span>
                             <p className='text-[16px] font-light manrope  md:min-w-full'>
-                                I am a front-end developer based in Nigeria looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill
+                                I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility and data structure when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Nodejs and a bit of Designing. While I am not programming, I enjoy playing football, chess and making art. Learning more to improve skill.
                             </p>
                         </span>
                         {/* btn/links */}
                         <span className='flex gap-3 py-5 items-center w-full'>
-                            <button className='bg-[hsla(72,72%,70%,1)] px-3 py-1 md:py-3 md:font-semibold md:text-lg flex gap-3 items-center rounded-full text-black text-[12px] font-semibold  text-sm text-nowrap  manrope cursor-pointer hover:bg-[hsla(72,100%,94%,1.00)]'>DOWNLOAD RESUME
+                            <button className='bg-[hsla(72,72%,70%,1)] px-3 py-1.5 md:py-3 md:font-semibold md:text-lg flex gap-3 items-center rounded-full text-black text-[12px] font-semibold  text-sm text-nowrap  manrope cursor-pointer hover:bg-[hsla(72,100%,94%,1.00)]'>DOWNLOAD RESUME
                                 <span className='p-2 md:p-1 bg-black rounded-full text-black'> <img src={download} alt="" className='w-[12px] text-white md:hidden'/></span>
                             </button>
                             {/* link in */}
-                            <span className='bg-[hsla(0,0%,13%,1)] p-2 flex rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
+                            <span className='bg-[hsla(0,0%,13%,1)] p-3 flex rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
                                 <a href="https://www.linkedin.com/in/adedayo-a-70443a36b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
                                     <FaLinkedinIn className='size-[20px] md:size-[30px] text-[hsla(72,72%,70%,1)]'/>
                                 </a>
                             </span>
                             {/* gitHub */}
-                            <span className='bg-[hsla(0,0%,13%,1)] p-2 flex rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
+                            <span className='bg-[hsla(0,0%,13%,1)] p-3 flex rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
                                 <a href="https://github.com/dayosvoid">
                                     <FaGithub className='size-[20px] md:size-[30px] text-[hsla(72,72%,70%,1)]'/>
                                 </a>

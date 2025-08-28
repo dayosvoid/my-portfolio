@@ -11,3 +11,8 @@ body{
 .BebasNeue{
  font-family: Bebas Neue; 
 }
+
+.onhover:hover{
+   border-bottom: 2px solid hsla(72,72%,70%,1);
+   border-radius: 1px
+}

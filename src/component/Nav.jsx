@@ -44,19 +44,19 @@ const Nav = () => {
                         <ul className='flex gap-5 md:text-lg font-regular manrope'>
                             <li 
                                 onClick={() => handleNavClick('work')} 
-                                className='cursor-pointer md:text-xl hover:text-[hsla(72,72%,70%,1)] transition-colors'
+                                className='onhover cursor-pointer md:text-xl hover:text-[hsla(72,72%,70%,1)] '
                             >
                                 Work
                             </li>
                             <li 
                                 onClick={() => handleNavClick('about')} 
-                                className='cursor-pointer md:text-xl hover:text-[hsla(72,72%,70%,1)] transition-colors'
+                                className='onhover cursor-pointer md:text-xl hover:text-[hsla(72,72%,70%,1)] transition-colors'
                             >
                                 About
                             </li>
                             <li 
                                 onClick={() => handleNavClick('contact')} 
-                                className='cursor-pointer md:text-xl hover:text-[hsla(72,72%,70%,1)] transition-colors'
+                                className='onhover cursor-pointer md:text-xl hover:text-[hsla(72,72%,70%,1)] transition-colors'
                             >
                                 Contact
                             </li>
@@ -71,7 +71,7 @@ const Nav = () => {
                     <ul className='space-y-5 text-lg font-bold'>
                         <li 
                             onClick={() => handleNavClick('work')} 
-                            className='cursor-pointer hover:text-white transition-colors'
+                            className=' cursor-pointer hover:text-white transition-colors'
                         >
                             Work
                         </li>

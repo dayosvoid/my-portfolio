@@ -44,19 +44,19 @@ const AboutNav = () => {
                         <ul className='flex gap-5 md:text-lg font-regular manrope'>
                             <li 
                                 onClick={() => handleNavClick('work2')} 
-                                className='cursor-pointer md:text-xl hover:text-[hsla(72,72%,70%,1)] transition-colors'
+                                className='onhover cursor-pointer md:text-xl hover:text-[hsla(72,72%,70%,1)] transition-colors'
                             >
                                 Work
                             </li>
                             <li 
                                 onClick={() => handleNavClick('about2')} 
-                                className='cursor-pointer md:text-xl hover:text-[hsla(72,72%,70%,1)] transition-colors'
+                                className='onhover cursor-pointer md:text-xl hover:text-[hsla(72,72%,70%,1)] transition-colors'
                             >
                                 About
                             </li>
                             <li 
                                 onClick={() => handleNavClick('contact')} 
-                                className='cursor-pointer md:text-xl hover:text-[hsla(72,72%,70%,1)] transition-colors'
+                                className='onhover cursor-pointer md:text-xl hover:text-[hsla(72,72%,70%,1)] transition-colors'
                             >
                                 Contact
                             </li>

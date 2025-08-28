@@ -36,13 +36,13 @@ const Hero = () => {
                     <span className='p-2 bg-black rounded-full text-black'><ArrowUpRight className='size-[20px] text-white'/></span>
                 </button>
                 {/* link in */}
-                <span className='bg-[hsla(0,0%,13%,1)] p-2.5 rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
+                <span className='bg-[hsla(0,0%,13%,1)] p-3 rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
                     <a href="https://www.linkedin.com/in/adedayo-a-70443a36b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
                         <FaLinkedinIn className='size-[20px] md:size-[30px] text-[hsla(72,72%,70%,1)]'/>
                     </a>
                 </span>
                 {/* gitHub */}
-                <span className='bg-[hsla(0,0%,13%,1)] p-2.5 rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
+                <span className='bg-[hsla(0,0%,13%,1)] p-3 rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
                     <a href="https://github.com/dayosvoid">
                        <FaGithub className='size-[20px] md:size-[30px] text-[hsla(72,72%,70%,1)]'/>
                     </a>
