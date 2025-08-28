@@ -56,9 +56,9 @@ const FeaturedProject = () => {
                 projects.map((project)=>(
                     <div key={project.year} className='py-10 w-full gap-10 md:flex '>
                         {/* projext */}
-                        <div  className='w-full bg-gray-800 p-5 pb-0 flex justify-center rounded-md '>
+                        <div  className='w-full bg-gray-800 p-5 pb-0 flex justify-center rounded-md overflow-hidden '>
                             <a href={project.liveLink}>
-                                <img src={project.image} alt="" className='size-[80%] relative buttom-0 left-1/2 -translate-x-1/2 ' />
+                                <img src={project.image} alt="" className='size-[80%] relative bottom-[-30px] left-1/2 -translate-x-1/2' />
                             </a>
                         </div>
                         {/* about ptojecy */}

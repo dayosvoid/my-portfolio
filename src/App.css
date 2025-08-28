@@ -1,7 +1,7 @@
 @import "tailwindcss";
-*{
+/* *{
  border:1px solid red; 
-}
+} */
 body{
  font-family: manrope; 
   background: #000;
