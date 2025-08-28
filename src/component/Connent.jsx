@@ -107,14 +107,14 @@ const Connent = () => {
     <div className='container w-11/12 m-auto flex-col md:items-start '>
          <div className=' flex flex-col gap-5 md:flex-row py-10 md:py-10'>
             {/* let connent */}
-            <div ref={contactRef} className='flex flex-col w-full gap-5  relative '>
+            <div ref={contactRef} className='flex flex-col w-full gap-10  relative '>
                 <span className='w-full'>
                     <h2 className='BebasNeue text-4xl md:text-5xl w-full'>
                       LET'S CONNECT
                     </h2>
                 </span>
 
-                <span className='text-sm md:text-lg'>
+                <span className='text-sm md:text-lg space-y-2'>
                     <p>Say hello at <span className='border-b-[2px] border-[hsla(72,72%,70%,1)] '>atimileyin911@gmail.com</span></p>
                     <p>For more info, here's my <span className='border-b-[2px] border-[hsla(72,72%,70%,1)]'>resume</span></p>
                 </span>

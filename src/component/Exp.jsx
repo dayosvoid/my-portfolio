@@ -25,10 +25,10 @@ const Exp = () => {
                 <span className='flex flex-col md:flex-row md:justify-between w-full'>
                     <span className='w-full flex flex-col gap-1'>
                         <p className='font-semibold md:text-xl'>FullStack Intern</p>
-                        <span className='text-[12px] hidden md:flex text-[hsla(72,72%,70%,1)]'><a href="">Tech Studio Academy</a></span>
+                        <span className='text-[12px] hidden font-bold md:flex text-[hsla(72,72%,70%,1)]'><a href="https://techstudioacademy.com">Tech Studio Academy</a></span>
                     </span>
                     <p className='text-sm md:text-end text-[hsla(0,0%,78%,1)] w-full'>August 2025 — Present </p>
-                    <span><a href="https://techstudioacademy.com" className='text-[12px] md:hidden text-[hsla(72,72%,70%,1)] cursor-pointer hover:text-lg hover:text-[hsla(72,63%,78%,1.00)]'>Tech Studio Academy</a></span>
+                    <span><a href="https://techstudioacademy.com" className='text-[12px] font-semibold md:hidden text-[hsla(72,72%,70%,1)] cursor-pointer hover:text-lg hover:text-[hsla(72,63%,78%,1.00)]'>Tech Studio Academy</a></span>
                 </span>
 
                 <p className='text-sm md:text-lg text-[hsla(0,0%,78%,1)]'>

@@ -48,12 +48,12 @@ const FeaturedProject = () => {
             <div  ref={workRef}>
                 <span ref={targetRef} className='space-y-4 '>
                     <h2 className='BebasNeue text-4xl md:text-6xl'>Featured Projects</h2>
-                    <p className='manrope text-sm md:text-lg font-light md:w-[50%]'>Here are some of the selected projects that showcase my passion for front-end development.</p>
+                    <p className='manrope text-[16px] md:text-lg font-light md:w-[50%]'>Here are some of the selected projects that showcase my passion for front-end development.</p>
                 </span>
                 {/* FIRST PROJECT */}
                {
                 projects.map((project)=>(
-                    <div key={project.year} className='py-10 w-full gap-5 md:flex '>
+                    <div key={project.year} className='py-10 w-full gap-10 md:flex '>
                         {/* projext */}
                         <div  className='w-full bg-gray-800 p-5 pb-0 flex justify-center rounded-md '>
                             <a href={project.liveLink}>
@@ -61,11 +61,11 @@ const FeaturedProject = () => {
                             </a>
                         </div>
                         {/* about ptojecy */}
-                        <div className='flex flex-col gap-3 w-full'>
+                        <div className='flex flex-col gap-3 w-full pt-5'>
                         <h2 className='font-regular text-3xl text-start'>
                                 {project.title}
                             </h2> 
-                        <p className='manrope md:text-lg text-sm font-light'>
+                        <p className='manrope md:text-lg text-[16px] font-light'>
                             {project.description}
                         </p>
 

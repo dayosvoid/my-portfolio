@@ -25,29 +25,29 @@ const MoreAboutMe = () => {
                         </span>
                         {/* priorty of what i do */}
                         <p className='text-xl md:text-2xl md:min-w-full'>
-                                I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background.
+                                I am a front-end developer based in Nigeria looking for exciting opportunities. Has Mechanical Engineering background.
                         </p>
                         {/* what i do */}
                         <span>
                             <p className='text-sm font-light manrope  md:min-w-full'>
-                                I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill
+                                I am a front-end developer based in Nigeria looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill
                             </p>
                         </span>
                         {/* btn/links */}
-                        <span className='flex gap-3 items-center'>
-                            <button className='bg-[hsla(72,72%,70%,1)] px-2 py-1 md:py-3 md:font-semibold flex gap-3 items-center rounded-full text-black text-[12px]  md:text-sm text-nowrap  manrope cursor-pointer hover:bg-[hsla(72,100%,94%,1.00)]'>DOWNLOAD RESUME
-                                <span className='p-2 bg-black rounded-full text-black'> <img src={download} alt="" className='size-[20px] text-white md:hidden'/></span>
+                        <span className='flex gap-3 py-5 items-center w-full'>
+                            <button className='bg-[hsla(72,72%,70%,1)] px-2 py-1 md:py-3 md:font-semibold flex gap-3 items-center rounded-full text-black text-[12px] font-semibold  text-sm text-nowrap  manrope cursor-pointer hover:bg-[hsla(72,100%,94%,1.00)]'>DOWNLOAD RESUME
+                                <span className='p-2 bg-black rounded-full text-black'> <img src={download} alt="" className='w-[12px] text-white md:hidden'/></span>
                             </button>
                             {/* link in */}
-                            <span className='bg-[hsla(0,0%,13%,1)] p-2.5 rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
+                            <span className='bg-[hsla(0,0%,13%,1)] p-2 rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
                                 <a href="#">
-                                    <img src={linkin} alt="" className='max-size-[12px] md:size-[20px]'/>
+                                    <img src={linkin} alt="" className='min-size-[10px] md:min-size-[20px]'/>
                                 </a>
                             </span>
                             {/* gitHub */}
-                            <span className='bg-[hsla(0,0%,13%,1)] p-2.5 rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
+                            <span className='bg-[hsla(0,0%,13%,1)] p-2 rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
                                 <a href="#">
-                                    <img src={github} alt="" className='size-[12px] md:size-[20px]'/>
+                                    <img src={github} alt="" className='min-size-[10px] md:min-size-[20px]'/>
                                 </a>
                             </span>
                         </span>

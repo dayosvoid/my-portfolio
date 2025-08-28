@@ -25,13 +25,13 @@ const Hero = () => {
             </span>
             {/* what i do */}
             <span className='md:w-[70%]'>
-                <p className='text-sm md:text-lg font-light manrope'>
+                <p className='text-[16px] md:text-lg font-light manrope'>
                     A Nigerian based  developer passionate about building accessible and user friendly websites.
                 </p>
             </span>
             {/* btn/links */}
             <span className='flex gap-3 items-center'>
-                <button onClick={() => handleNavClick('contact')} className='bg-[hsla(72,72%,70%,1)] px-2 py-1 flex gap-3 items-center rounded-full text-black text-sm manrope cursor-pointer hover:bg-[hsla(72,100%,94%,1.00)]'>CONTACT ME
+                <button onClick={() => handleNavClick('contact')} className='bg-[hsla(72,72%,70%,1)] px-2 py-1 flex font-semibold gap-3 items-center rounded-full text-black text-sm manrope cursor-pointer hover:bg-[hsla(72,100%,94%,1.00)]'>CONTACT ME
                     <span className='p-2 bg-black rounded-full text-black'><ArrowUpRight className='size-[20px] text-white'/></span>
                 </button>
                 {/* link in */}
