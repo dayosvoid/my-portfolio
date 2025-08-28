@@ -6,7 +6,7 @@ import Connent from '../component/Connent'
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className='py-3'>
       <Nav/>
       <MoreAboutMe/>
       <Exp/>

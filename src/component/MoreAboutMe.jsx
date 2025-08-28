@@ -35,8 +35,8 @@ const MoreAboutMe = () => {
                         </span>
                         {/* btn/links */}
                         <span className='flex gap-3 items-center'>
-                            <button className='bg-[hsla(72,72%,70%,1)] px-2 py-1 flex gap-3 items-center rounded-full text-black text-[12px]  md:text-sm text-nowrap  manrope cursor-pointer hover:bg-[hsla(72,63%,78%,1.00)]'>DOWNLOAD RESUME
-                                <span className='p-2 bg-black rounded-full text-black'> <img src={download} alt="" className='size-[20px] text-white'/></span>
+                            <button className='bg-[hsla(72,72%,70%,1)] px-2 py-1 md:py-3 md:font-semibold flex gap-3 items-center rounded-full text-black text-[12px]  md:text-sm text-nowrap  manrope cursor-pointer hover:bg-[hsla(72,100%,94%,1.00)]'>DOWNLOAD RESUME
+                                <span className='p-2 bg-black rounded-full text-black'> <img src={download} alt="" className='size-[20px] text-white md:hidden'/></span>
                             </button>
                             {/* link in */}
                             <span className='bg-[hsla(0,0%,13%,1)] p-2.5 rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>

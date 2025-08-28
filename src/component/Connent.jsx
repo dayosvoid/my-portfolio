@@ -1,12 +1,22 @@
 import { CheckCircle, Copyright, Instagram, XCircle } from 'lucide-react'
-import React, { useState } from 'react'
+import React, { useEffect,useRef,useContext,useState } from 'react'
 import linkin from '../assets/hero/linkin.png'
 import github from '../assets/hero/github.png'
 import twitter from '../assets/footer/twitter.png'
-import { jsxs } from 'react/jsx-runtime'
+import {  ScrollContext } from '../context/Scroll'
 
 const Connent = () => {
+
+
+     const contactRef = useRef(null);
+          const { registerSectionRef } = useContext(ScrollContext);
+          
+          useEffect(() => {
+              registerSectionRef('contact', contactRef);
+          }, [registerSectionRef]);
     
+
+
     const initialValue = {
         name:"",
         email:"",
@@ -95,9 +105,9 @@ const Connent = () => {
 
   return (
     <div className='container w-11/12 m-auto flex-col md:items-start '>
-         <div className=' flex flex-col gap-5 md:flex-row md:py-10'>
+         <div className=' flex flex-col gap-5 md:flex-row py-10 md:py-10'>
             {/* let connent */}
-            <div className='flex flex-col w-full gap-5  relative '>
+            <div ref={contactRef} className='flex flex-col w-full gap-5  relative '>
                 <span className='w-full'>
                     <h2 className='BebasNeue text-4xl md:text-5xl w-full'>
                       LET'S CONNECT
@@ -110,29 +120,29 @@ const Connent = () => {
                 </span>
 
 
-                <div className='flex items-center gap-10 pb-4'>
+                <div className='flex items-center gap-7 md:gap-10 pb-4'>
                     {/* linked in */}
                     <span className='cursor-pointer hover:border-b hover:border-[hsla(72,72%,70%,1)]'>
                         <a href="https://www.linkedin.com/in/adedayo-a-70443a36b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
-                            <img src={linkin} alt="" className='w-[23px] md:w-[30px]' />
+                            <img src={linkin} alt="" className='w-[30px] md:w-[38px]' />
                         </a>
                     </span>
                     {/* github */}
                     <span className='cursor-pointer hover:border-b hover:border-[hsla(72,72%,70%,1)]'>
                         <a href="https://github.com/dayosvoid">
-                            <img src={github} alt="" className='w-[23px] md:size-[30px]' />
+                            <img src={github} alt="" className='w-[30px] md:size-[38px]' />
                         </a>
                     </span>
                     {/* x */}
                     <span className='cursor-pointer hover:border-b hover:border-[hsla(72,72%,70%,1)]'>
                         <a href="https://x.com/dayosvoid?t=q3P3c1m0g1o3IKfU-eUz0w&s=09">
-                            <img src={twitter} alt="" className='w-[23px] md:size-[30px]'/>
+                            <img src={twitter} alt="" className='w-[30px] md:size-[30px]'/>
                         </a>
                     </span>
                     {/* instagram */}
                     <span className='cursor-pointer hover:border-b hover:border-[hsla(72,72%,70%,1)]'>
                         <a href="https://www.instagram.com/dayosvoid?igsh=MWVsNXc2a3Y5dnUzbQ==">
-                            <Instagram className='text-[hsla(72,72%,70%,1)] size-[22px] md:size-[30px] '/>
+                            <Instagram className='text-[hsla(72,72%,70%,1)] size-[30px] md:size-[35px] '/>
                         </a>
                     </span>
                 </div>
@@ -152,25 +162,25 @@ const Connent = () => {
                     <div className='w-full relative'>
                         <label htmlFor="">Name</label>
                         <input type="text" name='name' value={formValue.name} onChange={handleChange} className='bg-gray-900 px-2 py-1 md:py-2 w-full rounded-md px-2 focus:outline-none text-[16px]' />
-                        {errors.name && <p className='text-red-500 text-[12px] absolute bottom-[-16px]'>{errors.name}</p>}
+                        {errors.name && <p className='text-red-500 text-[12px] absolute right-0 bottom-[-16px]'>{errors.name}</p>}
                     </div>
 
                      <div className='w-full relative'>
                         <label htmlFor="">Email</label>
                         <input type="email" name='email' value={formValue.email} onChange={handleChange} className='bg-gray-900 py-1 md:py-2 w-full rounded-md px-2 focus:outline-none text-[16px]' />
-                        {errors.email && <p className='text-red-500 text-[12px] absolute bottom-[-16px]'>{errors.email}</p>}
+                        {errors.email && <p className='text-red-500 text-[12px] absolute right-0 bottom-[-16px]'>{errors.email}</p>}
                     </div>
 
                      <div className='w-full relative'>
                         <label htmlFor="">Subject</label>
                         <input type="text" name='subject' value={formValue.subject} onChange={handleChange} className='bg-gray-900 py-1 md:py-2 w-full rounded-md px-2 focus:outline-none text-[16px]' />
-                        {errors.subject && <p className='text-red-500 text-[12px] absolute bottom-[-16px]'>{errors.subject}</p>}
+                        {errors.subject && <p className='text-red-500 text-[12px] absolute right-0 bottom-[-16px]'>{errors.subject}</p>}
                     </div>
 
                      <div className='w-full relative'>
                         <label htmlFor="">Message</label>
                         <textarea name="message" id="" value={formValue.message} onChange={handleChange}  className='bg-gray-900 pb-20 pt-2 w-full rounded-md px-2 focus:outline-none text-[16px]' ></textarea>
-                        {errors.message && <p className='text-red-500 text-[12px] absolute bottom-[-10px]'>{errors.message}</p>}
+                        {errors.message && <p className='text-red-500 text-[12px] absolute right-0 bottom-[-10px]'>{errors.message}</p>}
                     </div>
                     
 

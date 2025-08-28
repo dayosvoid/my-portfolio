@@ -8,7 +8,7 @@ import Connent from '../component/Connent'
 
 const HomePage = () => {
   return (
-    <div>
+    <div className='py-3'>
         <Nav/>
         <Hero/>
         <FeaturedProject/>

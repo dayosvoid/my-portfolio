@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useContext,useEffect,useRef } from 'react'
 import betahouse from '../assets/featured/betahouse.png'
 import url from '../assets/featured/url.png'
 import { ArrowUpRight, Github } from 'lucide-react'
 import github from '../assets/hero/github.png'
+import {  ScrollContext } from '../context/Scroll'
 
 const FeaturedProject = () => {
+     const workRef = useRef(null);
+    const { registerSectionRef } = useContext(ScrollContext);
+    
+    useEffect(() => {
+        registerSectionRef('work', workRef);
+    }, [registerSectionRef]);
+
     const projects =[
         {
             image:betahouse,
@@ -32,11 +40,13 @@ const FeaturedProject = () => {
             gitLink:'https://github.com/dayosvoid/frontend-beta-house',
         }
     ]
+
+    const {targetRef}=useContext(ScrollContext)
   return (
     <div className='border-t border-gray-500'>   
         <div className='container w-11/12 mx-auto py-10'>
-            <div>
-                <span className='space-y-4 '>
+            <div  ref={workRef}>
+                <span ref={targetRef} className='space-y-4 '>
                     <h2 className='BebasNeue text-4xl md:text-6xl'>Featured Projects</h2>
                     <p className='manrope text-sm md:text-lg font-light md:w-[50%]'>Here are some of the selected projects that showcase my passion for front-end development.</p>
                 </span>
@@ -45,8 +55,10 @@ const FeaturedProject = () => {
                 projects.map((project)=>(
                     <div key={project.year} className='py-10 w-full gap-5 md:flex '>
                         {/* projext */}
-                        <div  className='w-full bg-gray-800 p-5 pb-0 flex justify-center rounded-md'>
-                            <img src={project.image} alt="" className='size-[70%]' />
+                        <div  className='w-full bg-gray-800 p-5 pb-0 flex justify-center rounded-md relative'>
+                            <a href={project.liveLink}>
+                                <img src={project.image} alt="" className='size-[80%] absolute buttom-0 left-1/2 -translate-x-1/2 ' />
+                            </a>
                         </div>
                         {/* about ptojecy */}
                         <div className='flex flex-col gap-3 w-full'>

@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useEffect,useRef,useContext } from 'react'
 import thorfinn from '../assets/hero/thorfinn.jpg'
 import { Link } from 'react-router-dom'
+import {  ScrollContext } from '../context/Scroll'
 
 const About = () => {
+   const aboutRef = useRef(null);
+      const { registerSectionRef } = useContext(ScrollContext);
+      
+      useEffect(() => {
+          registerSectionRef('about', aboutRef);
+      }, [registerSectionRef]);
   return (
-    <div className='border-y border-gray-700  '>
-      <div className='container w-11/12 mx-auto flex flex-col md:flex-row-reverse gap-5 md:py-10 md:pb-50 pb-3'>
+    <div  className='border-y border-gray-700  '>
+      <div ref={aboutRef} className='container w-11/12 mx-auto flex flex-col md:flex-row-reverse gap-5 md:py-10 md:pb-50 pb-3'>
         <div className='flex flex-col  gap-5 md:w-[50%]'>
 
             <h1 className='hidden md:flex text-2xl '>
