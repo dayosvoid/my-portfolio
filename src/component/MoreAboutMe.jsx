@@ -30,7 +30,7 @@ const MoreAboutMe = () => {
   return (
     <div className='container w-11/12 mx-auto py-5'>
         <div className='space-y-10'>
-            <div ref={about2Ref}  className=' flex flex-col gap-10 md:gap-0 md:flex-row py-5 md:py-15 md:items-center md:items-start ' > 
+            <div ref={about2Ref}  className=' flex flex-col gap-10 md:gap-0 md:flex-row pb-5 md:py-10 md:items-center md:items-start ' > 
                     <div className='w-full  '>
                         <h2 className='BebasNeue hidden md:flex text-6xl '>ABOUT ME</h2>
                     </div>
