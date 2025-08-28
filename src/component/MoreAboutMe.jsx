@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef } from 'react'
 import download from "../assets/about/download.png"
-import thorfinn from "../assets/hero/me.jpg"
+import thorfinn from "../assets/hero/widecartoon.jpg"
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import {  ScrollContext } from '../context/Scroll'
 
@@ -77,7 +77,7 @@ const MoreAboutMe = () => {
                 </div>
                 <div>
                 <span className='rounded-md hidden md:flex py-5 '>
-                    <img src={thorfinn} alt="" className='rounded-md min-w-full h-180'/>
+                    <img src={thorfinn} alt="" className='rounded-md min-w-full '/>
                 </span>
             </div>
         </div>

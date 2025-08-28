@@ -1,5 +1,5 @@
 import React, { useEffect,useRef,useContext } from 'react'
-import thorfinn from '../assets/hero/me.jpg'
+import thorfinn from '../assets/hero/cartoon.jpg'
 import { Link } from 'react-router-dom'
 import {  ScrollContext } from '../context/Scroll'
 
