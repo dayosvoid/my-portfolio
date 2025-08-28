@@ -2,7 +2,7 @@ import React, { useContext,useEffect,useRef } from 'react'
 import linkin from '../assets/hero/linkin.png'
 import github from '../assets/hero/github.png'
 import { ArrowUpRight } from 'lucide-react'
-import thorfinn from "../assets/hero/thorfinn.jpg"
+import thorfinn from "../assets/hero/me.jpg"
 import { ScrollContext } from '../context/Scroll';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 

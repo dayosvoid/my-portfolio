@@ -1,8 +1,6 @@
 import React, { useContext, useEffect, useRef } from 'react'
-import linkin from '../assets/hero/linkin.png'
-import github from '../assets/hero/github.png'
 import download from "../assets/about/download.png"
-import thorfinn from "../assets/hero/thorfinn.jpg"
+import thorfinn from "../assets/hero/me.jpg"
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import {  ScrollContext } from '../context/Scroll'
 

@@ -1,5 +1,5 @@
 import React, { useEffect,useRef,useContext } from 'react'
-import thorfinn from '../assets/hero/thorfinn.jpg'
+import thorfinn from '../assets/hero/me.jpg'
 import { Link } from 'react-router-dom'
 import {  ScrollContext } from '../context/Scroll'
 
@@ -28,7 +28,7 @@ const About = () => {
             </p>
 
             <span className='text-[hsla(72,72%,70%,1)] font-bold hover:text-[18px] text-[18px] md:text-lg '>
-                <Link to='/about'><p className=' text-nowrap border-b-[2px] border-[hsla(72,72%,70%,1)] hover:text-[20px] transition-all duration-500 ease-out delay-200 w-[130px] md:w-[150px]'>MORE ABOUT ME</p></Link> 
+                <Link to='/about'><p className=' text-nowrap border-b-[2px] border-[hsla(72,72%,70%,1)] hover:text-[20px] transition-all duration-500 ease-out delay-200 w-[140px] md:w-[150px]'>MORE ABOUT ME</p></Link> 
             </span>
             
         </div>
