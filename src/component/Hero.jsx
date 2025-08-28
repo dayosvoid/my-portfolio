@@ -24,7 +24,7 @@ const Hero = () => {
             </span>
             {/* what i do */}
             <span className='md:w-[90%]'>
-                <p className='text-[16px] md:text-lg font-light manrope'>
+                <p className='text-[16px] text-[hsla(0,0%,78%,1)] md:text-lg font-light manrope'>
                     A Nigerian based  developer passionate about building accessible and user friendly websites.
                 </p>
             </span>

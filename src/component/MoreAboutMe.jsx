@@ -44,7 +44,7 @@ const MoreAboutMe = () => {
                         </p>
                         {/* what i do */}
                         <span>
-                            <p className='text-[16px] font-light manrope  md:min-w-full'>
+                            <p className='text-[16px] text-[hsla(0,0%,78%,1)] font-light manrope  md:min-w-full'>
                                 I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility and data structure when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Nodejs and a bit of Designing. While I am not programming, I enjoy playing football, chess and making art. Learning more to improve skill.
                             </p>
                         </span>
@@ -91,7 +91,7 @@ const MoreAboutMe = () => {
             </div>
 
             <div className='w-full flex flex-col gap-5'>
-                <p className='text-[16px] font-light'>
+                <p className='text-[16px] text-[hsla(0,0%,78%,1)] font-light'>
                     I am always looking to add more skills.Morbi egestas neque eu blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus faucibus tristique ut et dolor. 
                 </p>
 

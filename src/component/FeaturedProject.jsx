@@ -47,8 +47,8 @@ const FeaturedProject = () => {
         <div className='container w-11/12 mx-auto py-10'>
             <div  ref={workRef}>
                 <span ref={targetRef} className='space-y-4 '>
-                    <h2 className='BebasNeue text-4xl md:text-6xl'>Featured Projects</h2>
-                    <p className='manrope text-[16px] md:text-lg font-light md:w-[50%]'>Here are some of the selected projects that showcase my passion for Fullstack development projects.</p>
+                    <h2 className='BebasNeue text-4xl md:text-6xl'>FEATURED PROJRCTS </h2>
+                    <p className='manrope text-[16px] md:text-lg text-[hsla(0,0%,78%,1)] font-light md:w-[50%]'>Here are some of the selected projects that showcase my passion for Fullstack development projects.</p>
                 </span>
                 {/* FIRST PROJECT */}
                {
@@ -65,7 +65,7 @@ const FeaturedProject = () => {
                         <h2 className='font-regular text-3xl text-start'>
                                 {project.title}
                             </h2> 
-                        <p className='manrope md:text-lg text-[16px] font-light'>
+                        <p className='manrope text-[hsla(0,0%,78%,1)] md:text-lg text-[16px] font-light'>
                             {project.description}
                         </p>
 
@@ -73,11 +73,11 @@ const FeaturedProject = () => {
                             <p className='font-semibold'>Project Info</p>
                             <span className='flex pt-2 text-sm md:text-lg justify-between w-full border-t border-gray-600'>
                                 <p>Year</p>
-                                <p>{project.year}</p>
+                                <p className='text-[hsla(0,0%,78%,1)]'>{project.year}</p>
                             </span>
                             <span className='flex border-b border-[hsla(72,72%,70%,1)]  py-2 text-sm md:text-lg justify-between items-center w-full border-b border-t border-gray-600'>
                                 <p>Role</p>
-                                <p>{project.role}</p>
+                                <p className='text-[hsla(0,0%,78%,1)]'>{project.role}</p>
                             </span>
 
                             <div className='

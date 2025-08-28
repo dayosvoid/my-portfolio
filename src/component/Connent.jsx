@@ -113,9 +113,9 @@ const Connent = () => {
                     </h2>
                 </span>
 
-                <span className='text-sm md:text-lg space-y-2'>
-                    <p>Say hello at <span className='border-b-[2px] border-[hsla(72,72%,70%,1)] '>atimileyin911@gmail.com</span></p>
-                    <p>For more info, here's my <span className='border-b-[2px] border-[hsla(72,72%,70%,1)]'>resume</span></p>
+                <span className='text-sm md:text-lg space-y-2 text-gray-300'>
+                    <p className=''>Say hello at <span className='border-b-[2px] text-white border-[hsla(72,72%,70%,1)] '>atimileyin911@gmail.com</span></p>
+                    <p>For more info, here's my <span className='border-b-[2px] text-white border-[hsla(72,72%,70%,1)]'>resume</span></p>
                 </span>
 
 
@@ -147,7 +147,7 @@ const Connent = () => {
                 </div>
 
                 
-                <span className='flex pt-5 text-sm items-center  absolute bottom-0 hidden md:flex'>
+                <span className='flex pt-5 text-[hsla(0,0%,78%,1)] text-sm items-center  absolute bottom-0 hidden md:flex'>
                     <Copyright className='w-[14px]'/>
                     <p > 2025 Adedayo A.</p>
                 </span>
@@ -157,7 +157,7 @@ const Connent = () => {
 
             {/* form  */}
             <div className='w-full relative'>
-                <form onSubmit={handleSubmit} action="" className='flex flex-col gap-4 items-start md:text-lg w-full'>
+                <form onSubmit={handleSubmit}  action="" className='flex text-[hsla(0,0%,78%,1)] flex-col gap-4 items-start md:text-lg w-full'>
                     <div className='w-full relative'>
                         <label htmlFor="">Name</label>
                         <input type="text" name='name' value={formValue.name} onChange={handleChange} className='bg-gray-900 px-2 py-1 md:py-2 w-full rounded-md px-2 focus:outline-none text-[16px]' />
@@ -208,7 +208,7 @@ const Connent = () => {
 
         </div>
 
-        <span className='flex md:hidden pt-5 text-sm md:text-lg items-center'>
+        <span className='flex md:hidden text-[hsla(0,0%,78%,1)] pt-5 text-sm md:text-lg items-center'>
                 <Copyright className='w-[14px]'/>
                 <p > 2025 Adedayo A.</p>
          </span>
