@@ -27,11 +27,11 @@ const Exp = () => {
                         <p className='font-semibold md:text-xl'>FullStack Intern</p>
                         <span className='text-[12px] hidden font-bold md:flex text-[hsla(72,72%,70%,1)]'><a href="https://techstudioacademy.com">Tech Studio Academy</a></span>
                     </span>
-                    <p className='text-sm md:text-end text-[hsla(0,0%,78%,1)] w-full'>August 2025 — Present </p>
+                    <p className='text-[16px] md:text-end text-[hsla(0,0%,78%,1)] w-full'>August 2025 — Present </p>
                     <span><a href="https://techstudioacademy.com" className='text-[12px] font-semibold md:hidden text-[hsla(72,72%,70%,1)] cursor-pointer hover:text-lg hover:text-[hsla(72,63%,78%,1.00)]'>Tech Studio Academy</a></span>
                 </span>
 
-                <p className='text-sm md:text-lg text-[hsla(0,0%,78%,1)]'>
+                <p className='text-[16px] md:text-lg text-[hsla(0,0%,78%,1)]'>
                     Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
             </div>

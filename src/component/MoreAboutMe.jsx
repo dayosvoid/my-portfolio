@@ -29,7 +29,7 @@ const MoreAboutMe = () => {
                         </p>
                         {/* what i do */}
                         <span>
-                            <p className='text-sm font-light manrope  md:min-w-full'>
+                            <p className='text-[16px] font-light manrope  md:min-w-full'>
                                 I am a front-end developer based in Nigeria looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill
                             </p>
                         </span>
@@ -76,11 +76,11 @@ const MoreAboutMe = () => {
             </div>
 
             <div className='w-full flex flex-col gap-5'>
-                <p className='text-sm font-light'>
+                <p className='text-[16px] font-light'>
                     I am always looking to add more skills.Morbi egestas neque eu blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus faucibus tristique ut et dolor. 
                 </p>
 
-                <div className='flex flex-col md:flex-col-reverse gap-2 text-sm'>
+                <div className='flex flex-col md:flex-col-reverse gap-2 text-[16px]'>
                     <div className='grid grid-cols-[70px_minmax(100px,1fr)_1fr] md:grid-cols-3  gap-1 text-nowrap'>
                     {
                         EXP.map((xp)=>(
@@ -89,7 +89,7 @@ const MoreAboutMe = () => {
                     }
                     </div>
 
-                    <div className='grid grid-cols-[minmax(150px,1fr)_minmax(100px,1fr)] md:grid-cols-[1fr_60px_80px_80px]  gap-2 text-nowrap'>
+                    <div className='grid text-[16px] grid-cols-[minmax(150px,1fr)_minmax(100px,1fr)] md:grid-cols-[1fr_60px_80px_80px]  gap-2 text-nowrap'>
                         {
                         EXP2.map((xp)=>(
                             <span className=' py-1 px-1 md: rounded-full border-[2px] w-auto border-gray-800 text-center'>{xp.code}</span>

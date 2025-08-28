@@ -19,7 +19,7 @@ const About = () => {
                 I am a front-end developer based in Sydney. Has Mechanical Engineering background. 
             </h1>
             {/* moblie */}
-            <p className=' text-sm font-semibold md:hidden'>
+            <p className=' text-sm md:hidden'>
                 I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing.    
             </p>
             {/* desktop */}
