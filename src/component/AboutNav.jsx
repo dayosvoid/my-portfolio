@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { ScrollContext } from '../context/Scroll';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 
-const Nav = () => {
+const AboutNav = () => {
     const { scrollToSection } = useContext(ScrollContext)
     // state to manage the dropdown Menu
     const [menu, setMenu] = useState(false)
@@ -43,13 +43,13 @@ const Nav = () => {
                     <div className='space-x-3 font-semibold items-center hidden md:flex'>
                         <ul className='flex gap-5 md:text-lg font-regular manrope'>
                             <li 
-                                onClick={() => handleNavClick('work')} 
+                                onClick={() => handleNavClick('work2')} 
                                 className='cursor-pointer md:text-xl hover:text-[hsla(72,72%,70%,1)] transition-colors'
                             >
                                 Work
                             </li>
                             <li 
-                                onClick={() => handleNavClick('about')} 
+                                onClick={() => handleNavClick('about2')} 
                                 className='cursor-pointer md:text-xl hover:text-[hsla(72,72%,70%,1)] transition-colors'
                             >
                                 About
@@ -70,13 +70,13 @@ const Nav = () => {
                 <div className='flex flex-col gap-8 text-black font-semibold bg-[hsla(72,72%,70%,.50)] backdrop-blur text-center w-full py-8 px-5 absolute rounded-md md:hidden z-10'>
                     <ul className='space-y-5 text-lg font-bold'>
                         <li 
-                            onClick={() => handleNavClick('work')} 
+                            onClick={() => handleNavClick('work2')} 
                             className='cursor-pointer hover:text-white transition-colors'
                         >
                             Work
                         </li>
                         <li 
-                            onClick={() => handleNavClick('about')} 
+                            onClick={() => handleNavClick('about2')} 
                             className='cursor-pointer hover:text-white transition-colors'
                         >
                             About
@@ -94,5 +94,5 @@ const Nav = () => {
     )
 }
 
-export default Nav
+export default AboutNav
 

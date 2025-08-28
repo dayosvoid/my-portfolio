@@ -1,11 +1,28 @@
-import React from 'react'
+import React, { useContext, useEffect, useRef } from 'react'
 import linkin from '../assets/hero/linkin.png'
 import github from '../assets/hero/github.png'
 import download from "../assets/about/download.png"
 import thorfinn from "../assets/hero/thorfinn.jpg"
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import {  ScrollContext } from '../context/Scroll'
 
 
 const MoreAboutMe = () => {
+
+     const about2Ref = useRef(null);
+     
+              const { registerSectionRef } = useContext(ScrollContext);
+              useEffect(() => {
+                  registerSectionRef('about2', about2Ref);
+              }, [registerSectionRef]);
+
+
+    const work2Ref = useRef(null);   
+              useEffect(() => {
+                  registerSectionRef('work2', work2Ref);
+              }, [registerSectionRef]);
+
+
     const EXP = [
        {code:'CSS'},{code:'ACCESIBILITY'},{code:'JAVASCRIPT'}
     ]
@@ -13,8 +30,8 @@ const MoreAboutMe = () => {
   return (
     <div className='container w-11/12 mx-auto py-10'>
         <div className='space-y-10'>
-            <div className=' flex flex-col gap-10 md:gap-0 md:flex-row py-5 md:py-15 md:items-center md:items-start ' > 
-                    <div className='w-full '>
+            <div ref={about2Ref}  className=' flex flex-col gap-10 md:gap-0 md:flex-row py-5 md:py-15 md:items-center md:items-start ' > 
+                    <div className='w-full  '>
                         <h2 className='BebasNeue hidden md:flex text-6xl '>ABOUT ME</h2>
                     </div>
                     {/* all text and button */}
@@ -24,7 +41,7 @@ const MoreAboutMe = () => {
                             <p className='BebasNeue md:hidden text-4xl '>ABOUT ME</p>
                         </span>
                         {/* priorty of what i do */}
-                        <p className='text-xl md:text-2xl md:min-w-full'>
+                        <p className='text-xl md:text-2xl md:font-semibold md:min-w-full'>
                                 I am a front-end developer based in Nigeria looking for exciting opportunities. Has Mechanical Engineering background.
                         </p>
                         {/* what i do */}
@@ -35,19 +52,19 @@ const MoreAboutMe = () => {
                         </span>
                         {/* btn/links */}
                         <span className='flex gap-3 py-5 items-center w-full'>
-                            <button className='bg-[hsla(72,72%,70%,1)] px-2 py-1 md:py-3 md:font-semibold flex gap-3 items-center rounded-full text-black text-[12px] font-semibold  text-sm text-nowrap  manrope cursor-pointer hover:bg-[hsla(72,100%,94%,1.00)]'>DOWNLOAD RESUME
-                                <span className='p-2 bg-black rounded-full text-black'> <img src={download} alt="" className='w-[12px] text-white md:hidden'/></span>
+                            <button className='bg-[hsla(72,72%,70%,1)] px-3 py-1 md:py-3 md:font-semibold md:text-lg flex gap-3 items-center rounded-full text-black text-[12px] font-semibold  text-sm text-nowrap  manrope cursor-pointer hover:bg-[hsla(72,100%,94%,1.00)]'>DOWNLOAD RESUME
+                                <span className='p-2 md:p-1 bg-black rounded-full text-black'> <img src={download} alt="" className='w-[12px] text-white md:hidden'/></span>
                             </button>
                             {/* link in */}
-                            <span className='bg-[hsla(0,0%,13%,1)] p-2 rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
+                            <span className='bg-[hsla(0,0%,13%,1)] p-2 flex rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
                                 <a href="#">
-                                    <img src={linkin} alt="" className='min-size-[10px] md:min-size-[20px]'/>
+                                    <FaLinkedinIn className='size-[20px] md:size-[30px] text-[hsla(72,72%,70%,1)]'/>
                                 </a>
                             </span>
                             {/* gitHub */}
-                            <span className='bg-[hsla(0,0%,13%,1)] p-2 rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
+                            <span className='bg-[hsla(0,0%,13%,1)] p-2 flex rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
                                 <a href="#">
-                                    <img src={github} alt="" className='min-size-[10px] md:min-size-[20px]'/>
+                                    <FaGithub className='size-[20px] md:size-[30px] text-[hsla(72,72%,70%,1)]'/>
                                 </a>
                             </span>
                         </span>
@@ -71,7 +88,7 @@ const MoreAboutMe = () => {
 
         {/* MY CAPABILITIES */}
         <div className='flex flex-col md:flex-row gap-5 md:py-10'>
-            <div className='w-full'>
+            <div ref={work2Ref} className='w-full '>
                 <h2 className='BebasNeue text-4xl md:text-5xl '>MY CAPABILITIES</h2>
             </div>
 

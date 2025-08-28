@@ -4,6 +4,7 @@ import github from '../assets/hero/github.png'
 import { ArrowUpRight } from 'lucide-react'
 import thorfinn from "../assets/hero/thorfinn.jpg"
 import { ScrollContext } from '../context/Scroll';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 const Hero = () => {
     const contactRef = useRef(null);
@@ -24,7 +25,7 @@ const Hero = () => {
                 <p className='BebasNeue text-4xl md:text-6xl'>HI, I AM <br />ADEDAYO ABODERIN.</p>
             </span>
             {/* what i do */}
-            <span className='md:w-[70%]'>
+            <span className='md:w-[90%]'>
                 <p className='text-[16px] md:text-lg font-light manrope'>
                     A Nigerian based  developer passionate about building accessible and user friendly websites.
                 </p>
@@ -37,13 +38,13 @@ const Hero = () => {
                 {/* link in */}
                 <span className='bg-[hsla(0,0%,13%,1)] p-2.5 rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
                     <a href="https://www.linkedin.com/in/adedayo-a-70443a36b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
-                        <img src={linkin} alt="" className='size-[20px]'/>
+                        <FaLinkedinIn className='size-[20px] md:size-[30px] text-[hsla(72,72%,70%,1)]'/>
                     </a>
                 </span>
                 {/* gitHub */}
                 <span className='bg-[hsla(0,0%,13%,1)] p-2.5 rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
                     <a href="https://github.com/dayosvoid">
-                        <img src={github} alt="" className='size-[24px]'/>
+                       <FaGithub className='size-[20px] md:size-[30px] text-[hsla(72,72%,70%,1)]'/>
                     </a>
                 </span>
             </span>

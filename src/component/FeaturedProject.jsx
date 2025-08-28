@@ -4,6 +4,7 @@ import url from '../assets/featured/url.png'
 import { ArrowUpRight, Github } from 'lucide-react'
 import github from '../assets/hero/github.png'
 import {  ScrollContext } from '../context/Scroll'
+import { FaGithub } from 'react-icons/fa'
 
 const FeaturedProject = () => {
      const workRef = useRef(null);
@@ -86,7 +87,7 @@ const FeaturedProject = () => {
 
                                 <div className='border-b-[2px] border-[hsla(72,72%,70%,1)] text-nowrap flex py-1 gap-1 items-center '>
                                     <a href={project.gitLink}>SEE ON GITHUB</a>
-                                     <img src={github} alt="" className='size-[15px]' />
+                                    <FaGithub className='size-[15px] text-[hsla(72,72%,70%,1)]'/>
                                 </div>
                                  
                             </div>

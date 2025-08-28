@@ -1,9 +1,8 @@
 import { CheckCircle, Copyright, Instagram, XCircle } from 'lucide-react'
 import React, { useEffect,useRef,useContext,useState } from 'react'
-import linkin from '../assets/hero/linkin.png'
-import github from '../assets/hero/github.png'
-import twitter from '../assets/footer/twitter.png'
 import {  ScrollContext } from '../context/Scroll'
+import { BsTwitterX } from 'react-icons/bs'
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 const Connent = () => {
 
@@ -124,19 +123,19 @@ const Connent = () => {
                     {/* linked in */}
                     <span className='cursor-pointer hover:border-b hover:border-[hsla(72,72%,70%,1)]'>
                         <a href="https://www.linkedin.com/in/adedayo-a-70443a36b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
-                            <img src={linkin} alt="" className='w-[30px] md:w-[38px]' />
+                            <FaLinkedinIn className='size-[30px] md:size-[30px] text-[hsla(72,72%,70%,1)]'/>
                         </a>
                     </span>
                     {/* github */}
                     <span className='cursor-pointer hover:border-b hover:border-[hsla(72,72%,70%,1)]'>
                         <a href="https://github.com/dayosvoid">
-                            <img src={github} alt="" className='w-[30px] md:size-[38px]' />
+                            <FaGithub className='size-[30px] md:size-[30px] text-[hsla(72,72%,70%,1)]'/>
                         </a>
                     </span>
                     {/* x */}
                     <span className='cursor-pointer hover:border-b hover:border-[hsla(72,72%,70%,1)]'>
                         <a href="https://x.com/dayosvoid?t=q3P3c1m0g1o3IKfU-eUz0w&s=09">
-                            <img src={twitter} alt="" className='w-[30px] md:size-[30px]'/>
+                            <BsTwitterX className='size-[30px] md:size-[30px] text-[hsla(72,72%,70%,1)]'/>
                         </a>
                     </span>
                     {/* instagram */}
@@ -150,7 +149,7 @@ const Connent = () => {
                 
                 <span className='flex pt-5 text-sm items-center  absolute bottom-0 hidden md:flex'>
                     <Copyright className='w-[14px]'/>
-                    <p > 2023 Adedayo A.</p>
+                    <p > 2025 Adedayo A.</p>
                 </span>
 
 
@@ -184,15 +183,15 @@ const Connent = () => {
                     </div>
                     
 
-                    <button className=' bg-[hsla(72,72%,70%,1)] text-black md:text-lg px-4 py-2 rounded-full hover:font-semibold cursor-pointer'>
+                    <button className=' bg-[hsla(72,72%,70%,1)] text-black md:text-lg px-5 py-2 rounded-full font-semibold hover:font-bold cursor-pointer'>
                         {
-                            isLoading ? 'Submitting...' : 'submit'
+                            isLoading ? 'SUBMITTING...' : 'SUBMIT'
                         }
                     </button>
                 </form>
 
                 {( status === 'success' &&
-                    <div className="bg-green-500 text-white text-nowrap p-2 absolute right-0 bottom-0 rounded-lg shadow-md flex gap-2 items-center w-full md:w-full">
+                    <div className="bg-green-500 text-white text-nowrap p-2 py-4 absolute right-0 bottom-0 rounded-lg shadow-md flex gap-2 items-center w-full md:w-full">
                         <CheckCircle className="w-6 h-6" />
                         <p>Thank you! message sent successfully.</p>
                     </div>
@@ -200,7 +199,7 @@ const Connent = () => {
 
 
                  {status === 'failed' && (
-                    <div className="bg-red-500 text-white text-nowrap p-2 absolute right-0 bottom-0 rounded-lg shadow-md flex gap-2 items-center w-full md:w-full">
+                    <div className="bg-red-500 text-white text-nowrap p-2 py-4 absolute right-0 bottom-0 rounded-lg shadow-md flex gap-2 items-center w-full md:w-full">
                         <XCircle className="w-6 h-6 mr-2" />
                         <p>Oops! Something went wrong.</p>
                     </div>
@@ -211,7 +210,7 @@ const Connent = () => {
 
         <span className='flex md:hidden pt-5 text-sm md:text-lg items-center'>
                 <Copyright className='w-[14px]'/>
-                <p > 2023 Robert Garcia</p>
+                <p > 2025 Adedayo A.</p>
          </span>
     </div>
   )
