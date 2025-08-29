@@ -30,9 +30,11 @@ const Hero = () => {
             </span>
             {/* btn/links */}
             <span className='flex gap-3 items-center'>
-                <button onClick={() => handleNavClick('contact')} className='bg-[hsla(72,72%,70%,1)] px-2 py-1 flex font-semibold gap-3 items-center rounded-full text-black text-sm manrope cursor-pointer hover:bg-[hsla(72,100%,94%,1.00)]'>CONTACT ME
-                    <span className='p-2 bg-black rounded-full text-black'><ArrowUpRight className='size-[20px] text-white'/></span>
-                </button>
+                <a href="https://wa.me/+2348065651436">
+                    <button className='bg-[hsla(72,72%,70%,1)] px-2 py-1 flex font-semibold gap-3 items-center rounded-full text-black text-sm manrope cursor-pointer hover:bg-[hsla(72,100%,94%,1.00)]'>CONTACT ME
+                        <span className='p-2 bg-black rounded-full text-black'><ArrowUpRight className='size-[20px] text-white'/></span>
+                    </button>
+                </a>
                 {/* link in */}
                 <span className='bg-[hsla(0,0%,13%,1)] p-3 rounded-full cursor-pointer hover:bg-[hsla(72,63%,78%,.50)]'>
                     <a href="https://www.linkedin.com/in/adedayo-a-70443a36b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
