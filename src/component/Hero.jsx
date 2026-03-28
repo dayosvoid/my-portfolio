@@ -1,6 +1,6 @@
 import React, { useContext,useEffect,useRef } from 'react'
 import { ArrowUpRight } from 'lucide-react'
-import thorfinn from "../assets/hero/normal.jpg"
+import thorfinn from "../assets/hero/portfolio2.jpeg"
 import { ScrollContext } from '../context/Scroll';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef } from 'react'
 import download from "../assets/about/download.png"
-import thorfinn from "../assets/hero/widecartoon.jpg"
+import thorfinn from "../assets/about/about.jpeg"
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import {  ScrollContext } from '../context/Scroll'
 

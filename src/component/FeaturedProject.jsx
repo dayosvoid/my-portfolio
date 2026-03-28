@@ -1,5 +1,6 @@
 import React, { useContext,useEffect,useRef } from 'react'
-import betahouse from '../assets/featured/betahouse.png'
+import betahouse from '../assets/featured/betahouse1.png'
+import eventra from '../assets/featured/betahouse2.png'
 import url from '../assets/featured/url.png'
 import { ArrowUpRight, Github } from 'lucide-react'
 import {  ScrollContext } from '../context/Scroll'
@@ -15,7 +16,7 @@ const FeaturedProject = () => {
 
     const projects =[
         {
-            image:betahouse,
+            image:eventra,
             title:'Promotional landing page for our favorite show',
             description:'Teamed up with a designer to breathe life into a property display webpage for our beloved show, Adventure Time. Delivered a fully responsive design and functional website with dynamic content capabilities, seamlessly integrating advanced feature to keep users engaged.',
             year:'2023',
@@ -33,11 +34,11 @@ const FeaturedProject = () => {
         },{
             image:betahouse,
             title:'Promotional landing page for our favorite show',
-            description:'Teamed up with a designer to breathe life into a property display webpage for our beloved show, Adventure Time. Delivered a fully responsive design and functional website with dynamic content capabilities, seamlessly integrating advanced feature to keep users engaged.',
+            description:'its an event planning and ticket distribution app , i primarily worjed on the backend, mainly the payment integration',
             year:'2024',
             role:'fullstack-dev',
-            liveLink:'https://frontend-beta-house-vb16.vercel.app/',
-            gitLink:'https://github.com/dayosvoid/frontend-beta-house',
+            liveLink:'https://eventra-teal.vercel.app/',
+            gitLink:"https://github.com/dayosvoid/eventra",
         }
     ]
 
@@ -55,9 +56,9 @@ const FeaturedProject = () => {
                 projects.map((project)=>(
                     <div key={project.year} className='py-10 w-full gap-10 md:flex '>
                         {/* projext */}
-                        <div  className='w-full bg-gray-800 p-5 pb-0 pt-7 flex justify-center rounded-md overflow-hidden '>
+                        <div  className='w-full bg-gray-800 p-5 pb-0 pt-7 flex justify-center rounded-md h-100 overflow-hidden '>
                             <a href={project.liveLink}>
-                                <img src={project.image} alt="" className='size-[80%] relative bottom-[-30px] left-1/2 -translate-x-1/2' />
+                                <img src={project.image} alt="" className='size-[200%] relative bottom-[-30px] left-1/2 -translate-x-1/2 overflow-hidden' />
                             </a>
                         </div>
                         {/* about ptojecy */}
@@ -75,7 +76,7 @@ const FeaturedProject = () => {
                                 <p>Year</p>
                                 <p className='text-[hsla(0,0%,78%,1)]'>{project.year}</p>
                             </span>
-                            <span className='flex border-b border-[hsla(72,72%,70%,1)]  py-2 text-sm md:text-lg justify-between items-center w-full border-b border-t border-gray-600'>
+                            <span className='flex border border-b-[hsla(72,72%,70%,1)]  py-2 text-sm md:text-lg justify-between items-center w-full border-b border-t border-gray-600'>
                                 <p>Role</p>
                                 <p className='text-[hsla(0,0%,78%,1)]'>{project.role}</p>
                             </span>
