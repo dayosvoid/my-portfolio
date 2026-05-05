@@ -4,7 +4,7 @@ export const ThemeContext = createContext(null)
 
 const ThemeContextProvider = ({children})=>{
 
-    const [theme,setTheme] = useState("light")
+    const [theme,setTheme] = useState("dark")
 
     return (
         <ThemeContext.Provider value={{theme, setTheme}}>
