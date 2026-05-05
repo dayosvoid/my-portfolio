@@ -22,9 +22,9 @@ const MoreAboutMe = () => {
 
 
     const EXP = [
-       {code:'CSS'},{code:'ACCESIBILITY'},{code:'JAVASCRIPT'}
+       {code:'CSS'},{code:'ACCESIBILITY'},{code:'JAVASCRIPT'},{code:'WEBSOCKET'}
     ]
-    const EXP2 = [ {code:'TAILWIND CSS'},{code:'HTML'},{code:'GITHUB'},{code:'REACT'}]
+    const EXP2 = [ {code:'TAILWIND CSS'},{code:'HTML'},{code:'GITHUB'},{code:'REACT'},{code:'REDIS'}]
   return (
     <div className='container w-11/12 mx-auto py-5'>
         <div className='space-y-10'>
@@ -99,7 +99,7 @@ const MoreAboutMe = () => {
                     <div className='grid grid-cols-[70px_minmax(100px,1fr)_1fr] md:grid-cols-3  gap-1 text-nowrap'>
                     {
                         EXP.map((xp)=>(
-                            <span className='py-1 px-1 rounded-full border-[2px] w-auto border-gray-800 text-center'>{xp.code}</span>
+                            <div className='py-1 px-1 rounded-full border-[2px] w-auto border-gray-800 text-center'><p>{xp.code}</p></div>
                         ))
                     }
                     </div>

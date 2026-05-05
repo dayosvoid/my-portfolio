@@ -1,18 +1,52 @@
 @import "tailwindcss";
-/* *{
- border:1px solid red; 
-} */
-body{
- font-family: manrope; 
-  background: #000;
-  color: white;
+
+/* Global reset or debugging */
+/* * { border: 1px solid red; } */
+
+#light {
+  font-family: 'Manrope', sans-serif; 
+  background-color: #d5d2d2;
+  color: #1a1a1a;
+  min-height: 100vh; /* Ensures it covers the whole screen */
 }
 
-.BebasNeue{
- font-family: Bebas Neue; 
+#dark {
+  font-family: 'Manrope', sans-serif; 
+  background-color: #1a1a1a; /* Dark background */
+  color: #fdf9f9;            /* Light text */
+  min-height: 100vh;
 }
 
-.onhover:hover{
-   border-bottom: 2px solid hsla(72,72%,70%,1);
-   border-radius: 1px
+.BebasNeue {
+  font-family: 'Bebas Neue', sans-serif;
+}
+#light p {
+      color: #1a1a1a;
+    }
+
+:root {
+  --bg-color: #d5d2d2;
+  --text-color: #1a1a1a;
+}
+
+#dark {
+  --bg-color: #1a1a1a;
+  --text-color: #d5d2d2;
+}
+
+#light, #dark {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+/* Smooth transition for the hover effect */
+.onhover {
+  transition: border-color 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.onhover:hover {
+  border-bottom: 2px solid hsla(72, 72%, 70%, 1);
+  border-radius: 1px;
 }

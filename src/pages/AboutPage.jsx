@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
+import { ThemeContext } from '../context/ThemeContext'
 import MoreAboutMe from '../component/MoreAboutMe'
 import Exp from '../component/Exp'
 import Connent from '../component/Connent'
@@ -9,8 +10,10 @@ const AboutPage = () => {
   useEffect(() => {
   window.scrollTo(0, 0);
 }, [])
+
+const {theme, setTheme} = useContext(ThemeContext)
   return (
-    <div className='py-3'>
+    <div id={theme} className='py-3'>
       <AboutNav/>
       <MoreAboutMe/>
       <Exp/>
