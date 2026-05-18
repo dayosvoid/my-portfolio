@@ -24,11 +24,11 @@ const About = () => {
             </p>
             {/* desktop */}
             <p className=' md:text-lg  text-[hsla(0,0%,78%,1)] font-light md:flex hidden'>
-                I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility and data structure when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Nodejs and a bit of Designing. While I am not programming, I enjoy playing football, chess and making art. Learning more to improve skill.
+                I am a front-end developer based in Nigeria looking for exciting opportunities. Has a Political science and Education background background. On the technical front, I craft robust, scalable, and responsive web applications from the ground up. Utilizing MongoDB, Express.js, React, and Node.js, alongside tools like TypeScript, Tailwind CSS, Redux Toolkit, and Redis, I design digital experiences that are as performant as they are user-centric.
             </p>
 
-            <span className='text-[hsla(72,72%,70%,1)] font-bold hover:text-[18px] text-[18px] md:text-lg '>
-                <Link to='/about'><p className=' text-nowrap border-b-[2px] border-[hsla(72,72%,70%,1)] hover:text-[20px] transition-all duration-500 ease-out delay-200 w-[140px] md:w-[150px]'>MORE ABOUT ME</p></Link> 
+            <span className='text-[hsla(72,72%,70%,1)] border-b-4 w-full font-bold md:text-lg '>
+                <Link to='/about'><p className=' text-nowrap border-[hsla(72,72%,70%,1)]  md:text-[25px] hover:text-[40px] transition-all duration-400 ease-in-out delay-100 w-[140px] md:w-[150px]'>VIEW MORE ABOUT ME...</p></Link> 
             </span>
             
         </div>

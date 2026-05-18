@@ -23,6 +23,13 @@
 #light p {
       color: #1a1a1a;
     }
+#light div {
+    color: #1a1a1a;
+   }
+
+   #light span {
+    color: #1a1a1a;
+   }
 
 :root {
   --bg-color: #d5d2d2;

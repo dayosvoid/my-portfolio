@@ -76,18 +76,18 @@ const FeaturedProject = () => {
                                 <p>Year</p>
                                 <p className='text-[hsla(0,0%,78%,1)]'>{project.year}</p>
                             </span>
-                            <span className='flex border border-b-[hsla(72,72%,70%,1)]  py-2 text-sm md:text-lg justify-between items-center w-full border-b border-t border-gray-600'>
+                            <span className='flex border-b-[hsla(72,72%,70%,1)]  py-2 text-sm md:text-lg justify-between items-center w-full border-x-none border-t border-gray-600'>
                                 <p>Role</p>
                                 <p className='text-[hsla(0,0%,78%,1)]'>{project.role}</p>
                             </span>
 
                             <div className='
                             flex gap-10 text-[12px] text-start  py-3 text-[hsla(72,72%,70%,1)] '>
-                                <div className='flex justify-start py-1  gap-1 border-b-[2px] border-[hsla(72,72%,70%,1)] text-nowrap'><a href={project.liveLink}>LIVE DEMO </a><ArrowUpRight className='size-[18px]'/></div>
+                                <div className='flex justify-start py-1  gap-1 border-b-[4px] border-[#92a252] text-nowrap'><a href={project.liveLink}>LIVE DEMO </a><ArrowUpRight className='size-[18px]'/></div>
 
-                                <div className='border-b-[2px] border-[hsla(72,72%,70%,1)] text-nowrap flex py-1 gap-1 items-center '>
+                                <div className='border-b-[4px] border-[#92a252] text-nowrap flex py-1 gap-1 items-center '>
                                     <a href={project.gitLink}>SEE ON GITHUB</a>
-                                    <FaGithub className='size-[15px] text-[hsla(72,72%,70%,1)]'/>
+                                    <FaGithub className='size-[15px]'/>
                                 </div>
                                  
                             </div>

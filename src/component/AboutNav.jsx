@@ -35,7 +35,7 @@ const AboutNav = () => {
                         onClick={() => setMenu(!menu)}
                         aria-label={menu ? 'Close menu' : 'Open menu'}
                     >
-                        {menu ? <X className='size-[30px] text-[hsla(0,0%,78%,1)] '/> : <HiOutlineMenuAlt4 className=' size-[30px] text-[hsla(0,0%,78%,1)]'/>}
+                        {menu ? <X className='size-[30px] text-[hsla(0,0%,78%,1)] '/> : <HiOutlineMenuAlt4 className=' size-[30px] text-[#656565]'/>}
                     </button>
                     
                     {/* Desktop navigation */}

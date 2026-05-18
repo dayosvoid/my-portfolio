@@ -123,25 +123,25 @@ const Connent = () => {
                     {/* linked in */}
                     <span className='cursor-pointer hover:border-b hover:border-[hsla(72,72%,70%,1)]'>
                         <a href="https://www.linkedin.com/in/adedayo-a-70443a36b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
-                            <FaLinkedinIn className='size-[30px] md:size-[30px] text-[hsla(72,72%,70%,1)]'/>
+                            <FaLinkedinIn className='size-[30px] md:size-[30px] '/>
                         </a>
                     </span>
                     {/* github */}
                     <span className='cursor-pointer hover:border-b hover:border-[hsla(72,72%,70%,1)]'>
                         <a href="https://github.com/dayosvoid">
-                            <FaGithub className='size-[30px] md:size-[30px] text-[hsla(72,72%,70%,1)]'/>
+                            <FaGithub className='size-[30px] md:size-[30px] '/>
                         </a>
                     </span>
                     {/* x */}
                     <span className='cursor-pointer hover:border-b hover:border-[hsla(72,72%,70%,1)]'>
                         <a href="https://x.com/dayosvoid?t=q3P3c1m0g1o3IKfU-eUz0w&s=09">
-                            <BsTwitterX className='size-[30px] md:size-[30px] text-[hsla(72,72%,70%,1)]'/>
+                            <BsTwitterX className='size-[30px] md:size-[30px] '/>
                         </a>
                     </span>
                     {/* instagram */}
                     <span className='cursor-pointer hover:border-b hover:border-[hsla(72,72%,70%,1)]'>
                         <a href="https://www.instagram.com/dayosvoid?igsh=MWVsNXc2a3Y5dnUzbQ==">
-                            <Instagram className='text-[hsla(72,72%,70%,1)] size-[30px] md:size-[35px] '/>
+                            <Instagram className=' size-[30px] md:size-[35px] '/>
                         </a>
                     </span>
                 </div>
